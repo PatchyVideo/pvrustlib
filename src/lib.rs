@@ -85,7 +85,7 @@ impl ServiceError {
         let resp = ServiceErrorResponse {
             service: service.to_string(),
             url: None,
-            error_kind: "FORBIDDEN".to_string(),
+            error_kind: "INVALID_TOKEN".to_string(),
             error_message: errmsg.clone(),
             human_readable_message: None,
             upstream_response_json: None,
